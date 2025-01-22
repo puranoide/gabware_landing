@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Konkhmer Sleokchher"
+}
+
+header {
+    display: flex;
+    padding: 15px;
+    background-color: #ffffff;
+    color: #fff;
+    height: 90px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+
+    margin-right: auto;
+    color: #32645E;
+}
+
+header ul {
+    padding: 20px;
+
+    list-style: none;
+    display: flex;
+}
+
+header li {
+    margin-right: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header a:hover {
+    color: #32645E;
+    border-bottom: solid 2px #32645E;
+}
+
+header button {
+    border: none;
+    height: 30px;
+    width: 120px;
+    margin: 18px 10px 0px 10px;
+    border-radius: 10px;
+    background-color: #32645E;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Konkhmer Sleokchher";
+    transition: all 0.2s ease-in-out;
+    animation-name: callbutton;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #4d978f;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+@keyframes callbutton {
+    0% {
+        scale: 1;
+    }
+
+    25% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-right: 0;
+        
+    }
+
+    header ul {
+        flex-direction:row;
+        align-self: center;
+    }
+
+    header li {
+        align-self: flex-start;
+    }
+
+    header button {
+        border: none;
+        height: 30px;
+        width: 120px;
+        margin: 0px 0px 0px -10px;
+        border-radius: 10px;
+        background-color: #32645E;
+        color: #fff;
+        font-size: 18px;
+        font-family: "Konkhmer Sleokchher";
+        transition: all 0.2s ease-in-out;
+        animation-name: callbutton;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        cursor: pointer;
+    }
+}
