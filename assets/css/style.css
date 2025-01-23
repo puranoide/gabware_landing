@@ -88,7 +88,7 @@ header button:hover {
 }
 .elemento-flotante:hover {
     animation-name: callbutton;
-    animation-duration: 0.3s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
 }
 
