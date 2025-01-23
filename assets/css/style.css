@@ -182,11 +182,12 @@ header button:hover {
 
 
 .conocenos-container {
+
     background-color: #ffffff;
     display: block;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: auto;
 }
 
 .conocenostxt {
@@ -223,6 +224,41 @@ header button:hover {
 .container-info-text span {
     color: #32645E;
 }
+
+.nuestros-proyectos-container {
+    background-color: #ffffff;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nuestros-proyectos-container h1 {
+    text-align: center;
+    color: #32645E;
+    font-size: 40px;
+    margin: 40px 0px 10px 0px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+}
+
+.nuestros-proyectos-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+    margin: 0px 200px 0px 200px;
+    padding: 20px 0px 100px 0px;
+}
+
+.nuestros-proyectos-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
 
 @keyframes callbutton {
     0% {
@@ -353,7 +389,7 @@ header button:hover {
         display: block;
         justify-content: center;
         align-items: center;
-        height: 600px;
+
     }
 
     .conocenostxt {
@@ -401,6 +437,60 @@ header button:hover {
 
     .container-info-text span {
         color: #32645E;
+    }
+
+    .nuestros-proyectos-container {
+        background-color: #ffffff;
+        display: block;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .nuestros-proyectos-container h1 {
+        text-align: center;
+        color: #32645E;
+        font-size: 16px;
+        margin: 40px 0px 10px 0px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+    }
+
+    .nuestros-proyectos-list {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 100px;
+        margin: 0px 200px 0px 200px;
+        padding: 20px 0px 100px 0px;
+    }
+
+    .nuestros-proyectos-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nuestros-proyectos-item img {
+        width: 250px;
+    }
+
+    .nuestros-proyectos-item h2 {
+        width: 250px;
+        text-align: center;
+        font-size: 16px;
+        color: #000000;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.247);
+    }
+    .nuestros-proyectos-item p {
+        width: 250px;
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 20px;
+        color: #000000;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.247);
     }
 
 
