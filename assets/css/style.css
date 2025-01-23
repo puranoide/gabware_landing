@@ -38,9 +38,11 @@ header a {
     text-decoration: none;
     color: #000000;
 }
+
 .active-responsive {
-   display: none;
+    display: none;
 }
+
 header a:hover {
     color: #32645E;
     border-bottom: solid 2px #32645E;
@@ -179,6 +181,48 @@ header button:hover {
 }
 
 
+.conocenos-container {
+    background-color: #ffffff;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.conocenostxt {
+    text-align: center;
+    color: #32645E;
+    font-size: 40px;
+    margin: 40px 0px 10px 0px;
+
+
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+}
+
+.container-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    gap: 100px;
+    margin: 0px 200px 0px 200px;
+    padding: 20px 0px 100px 0px;
+}
+
+.container-info-text {
+
+    margin: 0px 100px 0px 0px;
+}
+
+.container-info-text h1 {
+    color: #32645E;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.247);
+}
+
+.container-info-text span {
+    color: #32645E;
+}
 
 @keyframes callbutton {
     0% {
@@ -297,9 +341,67 @@ header button:hover {
     .interactive-touch {
         display: none;
     }
+
     .active-responsive {
-        display:contents;
-     }
+        display: contents;
+    }
+
+
+
+    .conocenos-container {
+        background-color: #ffffff;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+    }
+
+    .conocenostxt {
+        text-align: center;
+        color: #32645E;
+        font-size: 20px;
+        margin: 40px 0px 10px 0px;
+
+
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+    }
+
+    .container-info {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 100px;
+        margin: 0px 0 0px 0px;
+        padding: 20px;
+    }
+
+    .container-info img {
+        width: 50%;
+        height: 50%;
+        margin-left: 25%;
+    }
+
+    .container-info-text {
+
+        margin: 0px 0 0px 0px;
+    }
+
+    .container-info-text h1 {
+        font-size: 16px;
+        color: #32645E;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.247);
+    }
+
+    .container-info-text p {
+        font-size: 12px;
+        color: #000000;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.247);
+    }
+
+    .container-info-text span {
+        color: #32645E;
+    }
 
 
 }
