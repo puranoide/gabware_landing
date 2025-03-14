@@ -16,7 +16,8 @@ function login(email, password) {
     .then(data => {
         console.log(data);
         if (data.success) {
-            console.log("Login exitoso");
+            alert("Login exitoso");
+            window.location.href = "dasboard.php";
         }
     })
     .catch(error => {
