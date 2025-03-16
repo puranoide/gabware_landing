@@ -9,7 +9,7 @@ var email= document.getElementById("email");
 
 var message = document.getElementById("message");
 mailButton.addEventListener("click", function () {
-alert("name: " + nameEmpresa.value + "\nemail: " + email.value + "\nmessage: " + message.value);
+    mandarDatos(nameEmpresa.value, email.value, message.value);
 });
 
 function mandarDatos(name, email, message) {
