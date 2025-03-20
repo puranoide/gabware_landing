@@ -9,7 +9,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dasboard</title>
+    <title>Nuevo post</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
@@ -43,7 +43,6 @@ session_start();
                             </svg>
                             Dashboard
                         </a>
-
                         <a href="dasboard.php" class="flex items-center px-4 py-2.5 text-sm font-medium rounded-lg bg-red-800 text-white group transition-all duration-200 hover:bg-red-700">
                             <svg class="h-5 w-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -141,9 +140,23 @@ session_start();
 
             <!-- Main Content -->
             <main class="flex-1 p-6 bg-gray-100">
-                <h1 class="text-2xl font-semibold text-gray-900">Dashboard</h1>
+                <h1 class="text-2xl font-semibold text-gray-900">Nuevo post</h1>
                 <div class="mt-4 p-6 bg-white rounded-lg shadow-md">
-                    <p class="text-gray-600">Aca cargaremos todas nuestras metricas para analisis</p>
+                    <form action="guardar_post.php" method="POST" enctype="multipart/form-data">
+                        <div class="mb-4">
+                            <label for="title" class="block text-sm font-medium text-gray-700">Título</label>
+                            <input type="text" id="title" name="title" class="mt-1 p-2 w-full border rounded-md">
+                        </div>
+                        <div class="mb-4">
+                            <label for="content" class="block text-sm font-medium text-gray-700">Contenido</label>
+                            <textarea id="content" name="content" class="mt-1 p-2 w-full border rounded-md"></textarea>
+                        </div>
+                        <div class="mb-4">
+                            <label for="image" class="block text-sm font-medium text-gray-700">Imagen</label>
+                            <input type="file" id="image" name="image" class="mt-1 p-2 w-full border rounded-md">
+                        </div>
+                        <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Guardar</button>
+                    </form>
                 </div>
             </main>
         </div>
