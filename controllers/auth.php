@@ -14,7 +14,7 @@ function login($conexion, $correo, $contraseña)
         $row = mysqli_fetch_assoc($result);
 
         session_start();
-
+        $_SESSION['id'] = $row['id'];
         $_SESSION['email'] = $row['email'];
         $_SESSION['completename'] = $row['completename'];
         return true;
