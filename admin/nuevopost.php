@@ -142,10 +142,14 @@ session_start();
             <main class="flex-1 p-6 bg-gray-100">
                 <h1 class="text-2xl font-semibold text-gray-900">Nuevo post</h1>
                 <div class="mt-4 p-6 bg-white rounded-lg shadow-md">
-                    <form action="guardar_post.php" method="POST" enctype="multipart/form-data">
+                    <form action="" method="POST" enctype="multipart/form-data" id="post-form">
                         <div class="mb-4">
                             <label for="title" class="block text-sm font-medium text-gray-700">Título</label>
                             <input type="text" id="title" name="title" class="mt-1 p-2 w-full border rounded-md">
+                        </div>
+                        <div class="mb-4">
+                            <label for="enlace" class="block text-sm font-medium text-gray-700">enlace</label>
+                            <input type="text" id="enlace" name="enlace" class="mt-1 p-2 w-full border rounded-md">
                         </div>
                         <div class="mb-4">
                             <label for="content" class="block text-sm font-medium text-gray-700">Contenido</label>
@@ -174,6 +178,8 @@ session_start();
                 });
             });
         </script>
+
+        <script src="../assets/js/posts.js"></script>
     </body>
 
     </html>
