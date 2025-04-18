@@ -9,7 +9,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dasboard</title>
+    <title>Nuevo post</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
@@ -43,7 +43,6 @@ session_start();
                             </svg>
                             Dashboard
                         </a>
-
                         <a href="dasboard.php" class="flex items-center px-4 py-2.5 text-sm font-medium rounded-lg bg-red-800 text-white group transition-all duration-200 hover:bg-red-700">
                             <svg class="h-5 w-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -99,31 +98,6 @@ session_start();
                                 </a>
                             </div>
                         </div>
-
-                        <!-- Projects
-                    <a href="#" class="flex items-center px-4 py-2.5 text-sm font-medium rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white group transition-all duration-200">
-                        <svg class="h-5 w-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
-                        </svg>
-                        Projects
-                    </a>
- -->
-                        <!-- Calendar 
-                    <a href="#" class="flex items-center px-4 py-2.5 text-sm font-medium rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white group transition-all duration-200">
-                        <svg class="h-5 w-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                        Calendar
-                    </a>-->
-
-                        <!-- Documents
-                    <a href="#" class="flex items-center px-4 py-2.5 text-sm font-medium rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white group transition-all duration-200">
-                        <svg class="h-5 w-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                        </svg>
-                        Documents
-                    </a>
-                     -->
                     </div>
                 </nav>
 
@@ -141,10 +115,47 @@ session_start();
 
             <!-- Main Content -->
             <main class="flex-1 p-6 bg-gray-100">
-                <h1 class="text-2xl font-semibold text-gray-900">Dashboard</h1>
+                <h1 class="text-2xl font-semibold text-gray-900">Gestionar Posts</h1>
                 <div class="mt-4 p-6 bg-white rounded-lg shadow-md">
-                    <p class="text-gray-600">Aca cargaremos todas nuestras metricas para analisis</p>
-                </div>
+                    <p class="text-gray-600">Tabla de posts</p>
+                    <!-- component -->
+                    <table class="border-collapse w-full">
+                        <thead>
+                            <tr>
+                                <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">id</th>
+                                <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">titulo</th>
+                                <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">img</th>
+                                <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">estado</th>
+                                <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white lg:hover:bg-gray-100 flex lg:table-row flex-row lg:flex-row flex-wrap lg:flex-no-wrap mb-10 lg:mb-0">
+                                <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
+                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-200 px-2 py-1 text-xs font-bold uppercase">id</span>
+                                    1
+                                </td>
+                                <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b text-center block lg:table-cell relative lg:static">
+                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-200 px-2 py-1 text-xs font-bold uppercase">titulo</span>
+                                    titulo
+                                </td>
+                                <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b text-center block lg:table-cell relative lg:static">
+                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-200 px-2 py-1 text-xs font-bold uppercase">imagen</span>
+                                    imagen.png
+                                </td>
+                                <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b text-center block lg:table-cell relative lg:static">
+                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-200 px-2 py-1 text-xs font-bold uppercase">estado</span>
+                                    <span class="rounded bg-green-400 py-1 px-3 text-xs font-bold">activo</span>
+                                </td>
+                                <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b text-center block lg:table-cell relative lg:static">
+                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-200 px-2 py-1 text-xs font-bold uppercase">Actions</span>
+                                    <a href="#" class="text-blue-400 hover:text-blue-600 underline">Edit</a>
+                                    <a href="#" class="text-blue-400 hover:text-blue-600 underline pl-6">Remove</a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
             </main>
         </div>
 
@@ -162,7 +173,7 @@ session_start();
             });
         </script>
 
-        
+        <script src="../assets/js/posts.js"></script>
     </body>
 
     </html>
