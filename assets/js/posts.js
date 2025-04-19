@@ -59,6 +59,8 @@ function addPostApi(title, content, enlace, url) {
         //console.log(data);
         if (data.success) {
             console.log("respuesta :",data);
+            alert("post exitoso");
+            window.location.href = "gestionPosts.php";
         }
     })
     .catch(error => {

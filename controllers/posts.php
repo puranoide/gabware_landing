@@ -1,5 +1,11 @@
 <?php
 
+function getPosts($con) {
+    $sql = "SELECT * FROM Post";
+    $result = mysqli_query($con, $sql);
+    return $result;
+}
+
 function addPost($con,$title, $content, $enlace, $imageurl) {
     $sql = "INSERT INTO Post (titulo, contenido, link_img, enlace) VALUES (?,?,?,?)";
     $stmt = mysqli_prepare($con, $sql);
@@ -44,7 +50,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 echo json_encode(['error' => $e->getMessage()]);
             }
             break;
+        
+        case 'getPosts':
+            try {
+                $response = getPosts($conexion);
+                if ($response) {
+                    $posts = [];
+                    while ($row = $response->fetch_assoc()) {
+                        $posts[] = $row;
+                    }
+                    echo json_encode(['success' => true, 'posts' => $posts]);
+                } else {
+                    echo json_encode(['success' => false, 'message' => 'No se encontraron posts']);
+                }
+            } catch (Exception $e) {
+                echo json_encode(['error' => $e->getMessage()]);
+            }
             break;
+        
         default:
             echo json_encode(['success' => false]);
             break;
